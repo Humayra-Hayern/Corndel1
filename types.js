@@ -3,23 +3,23 @@ function whatIs(theName, something) {
   console.log(theName + " has type " + theType + " and value " + something);
 }
 
-let x;
-whatIs("declared x", x);
+let a;
+whatIs("declared a", a);
 
-x = 2;
-whatIs("numeric x", x);
+a = 2;
+whatIs("numeric a", a);
 
-let y = 4;
-whatIs("defined y", y);
+let h = 4;
+whatIs("defined h", h);
 
-x += y;
-whatIs("added y to x ", x);
+a += h;
+whatIs("added h to a ", a);
 
-y = "5";
-whatIs("redefined y", y);
+h = "5";
+whatIs("redefined h", h);
 
-x += y;
-whatIs("added another y to x ", x);
+a += h;
+whatIs("added another h to a ", h);
 
 o = {
   myValue: 75,
@@ -28,8 +28,8 @@ o = {
   },
 };
 
-x = 5;
-x = 5 + o;
-whatIs("added an object to numeric x ", x);
+a = 5;
+a = 5 + o;
+whatIs("added an object to numeric a ", a);
 
 whatIs("whatis", whatIs);
